@@ -1,0 +1,82 @@
+[
+  {
+    "id": "jesse",
+    "name": "Jesse",
+    "image": "",
+    "selected": true,
+    "wins": 0,
+    "leadMs": 0
+  },
+  {
+    "id": "marcus",
+    "name": "Marcus",
+    "image": "",
+    "selected": true,
+    "wins": 0,
+    "leadMs": 0
+  },
+  {
+    "id": "stan",
+    "name": "Stan",
+    "image": "",
+    "selected": true,
+    "wins": 0,
+    "leadMs": 0
+  },
+  {
+    "id": "taylor",
+    "name": "Taylor",
+    "image": "",
+    "selected": true,
+    "wins": 0,
+    "leadMs": 0
+  },
+  {
+    "id": "ryan",
+    "name": "Ryan",
+    "image": "",
+    "selected": true,
+    "wins": 0,
+    "leadMs": 0
+  },
+  {
+    "id": "logan",
+    "name": "Logan",
+    "image": "",
+    "selected": true,
+    "wins": 0,
+    "leadMs": 0
+  },
+  {
+    "id": "kellee",
+    "name": "Kellee",
+    "image": "",
+    "selected": true,
+    "wins": 0,
+    "leadMs": 0
+  },
+  {
+    "id": "tyler",
+    "name": "Tyler",
+    "image": "",
+    "selected": true,
+    "wins": 0,
+    "leadMs": 0
+  },
+  {
+    "id": "jason",
+    "name": "Jason",
+    "image": "",
+    "selected": true,
+    "wins": 0,
+    "leadMs": 0
+  },
+  {
+    "id": "jared",
+    "name": "Jared",
+    "image": "",
+    "selected": true,
+    "wins": 0,
+    "leadMs": 0
+  }
+]

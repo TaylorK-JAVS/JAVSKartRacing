@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JAVS Kart Racing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-lockup">
+        <img class="brand-mark" src="assets/javs-logo.svg" alt="JAVS">
+        <h1>Kart Racing</h1>
+      </div>
+      <p class="subtitle">Build your garage, set the lineup, and let the track decide who leads next week.</p>
+    </section>
+
+    <section class="broadcast-layout">
+      <section class="panel race-panel">
+        <div class="race-actions">
+          <button id="raceButton" class="primary-button" type="button">Start Race</button>
+          <button id="resetButton" class="secondary-button" type="button">Reset</button>
+          <button id="shuffleNames" class="ghost-button" type="button">Shuffle Grid</button>
+        </div>
+        <canvas id="raceCanvas" width="1260" height="860" aria-label="Animated kart race"></canvas>
+      </section>
+
+      <aside class="panel feed-panel">
+        <div class="panel-heading feed-heading">
+          <h2>Race Feed</h2>
+        </div>
+
+        <div class="stats feed-summary">
+          <div>
+            <span class="label">Status</span>
+            <strong id="statusText">Waiting at the starting line.</strong>
+          </div>
+          <div>
+            <span class="label">Winner</span>
+            <strong id="winnerText">Nobody yet</strong>
+          </div>
+        </div>
+
+        <div id="raceFeed" class="race-feed" aria-live="polite"></div>
+      </aside>
+    </section>
+
+    <details class="panel garage-panel">
+      <summary class="garage-summary">
+        <span>Racer Garage</span>
+        <strong id="rosterCount">0 ready</strong>
+      </summary>
+
+      <div class="controls">
+        <form id="racerForm" class="racer-form">
+          <label class="field">
+            <span>Racer name</span>
+            <input id="racerName" type="text" maxlength="32" placeholder="Add a racer" required>
+          </label>
+
+          <label class="field">
+            <span>Photo</span>
+            <input id="racerImage" type="file" accept="image/*">
+          </label>
+
+          <div class="actions form-actions">
+            <button id="saveRacerButton" class="primary-button" type="submit">Save Racer</button>
+            <button id="clearFormButton" class="secondary-button" type="button">Clear Form</button>
+          </div>
+        </form>
+
+        <div class="saved-roster">
+          <div class="saved-roster-heading">
+            <span class="label">Saved racers</span>
+          </div>
+          <div id="savedRacers" class="saved-racers"></div>
+        </div>
+
+        <div class="garage-danger">
+          <button id="resetAllDataButton" class="danger-button" type="button">Reset All Data</button>
+        </div>
+      </div>
+    </details>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

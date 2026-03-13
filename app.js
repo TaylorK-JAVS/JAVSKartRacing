@@ -186,21 +186,21 @@ function getSelectedProfiles() {
   return state.savedRacers.filter((racer) => racer.selected).slice(0, maxRaceRacers);
 }
 
-function getLeadSpread() {
-  const values = state.savedRacers.map((racer) => racer.leadMs || 0);
+function getWinsSpread() {
+  const values = state.savedRacers.map((racer) => racer.wins || 0);
   return {
-    minLeadMs: Math.min(...values, 0),
-    maxLeadMs: Math.max(...values, 1),
+    minWins: Math.min(...values, 0),
+    maxWins: Math.max(...values, 1),
   };
 }
 
 function getPerformanceBias(profile) {
-  const { minLeadMs, maxLeadMs } = getLeadSpread();
-  const range = Math.max(1, maxLeadMs - minLeadMs);
-  const leadRatio = ((profile.leadMs || 0) - minLeadMs) / range;
+  const { minWins, maxWins } = getWinsSpread();
+  const range = Math.max(1, maxWins - minWins);
+  const winRatio = ((profile.wins || 0) - minWins) / range;
   return {
-    coffeeCooldownFactor: 0.8 + leadRatio * 0.55,
-    issueCooldownFactor: 1.25 - leadRatio * 0.55,
+    coffeeCooldownFactor: 0.8 + winRatio * 0.55,
+    issueCooldownFactor: 1.25 - winRatio * 0.55,
   };
 }
 
@@ -389,7 +389,7 @@ function renderSavedRacers() {
     });
     const metaText = document.createElement("span");
     metaText.className = "saved-racer-meta";
-    const statsText = `${racer.wins} wins | ${Math.round((racer.leadMs || 0) / 1000)}s led`;
+    const statsText = `${racer.wins} wins`;
     metaText.textContent = racer.selected ? `${statsText} | In the next race` : `${statsText} | Parked in the garage`;
     meta.append(toggle, metaText);
 

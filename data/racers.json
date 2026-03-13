@@ -11,7 +11,7 @@
     "id": "marcus",
     "name": "Marcus",
     "image": "assets/racers/marcus-1773405756244.jpg",
-    "selected": false,
+    "selected": true,
     "wins": 0,
     "leadMs": 0
   },
@@ -19,7 +19,7 @@
     "id": "stan",
     "name": "Stan",
     "image": "assets/racers/stan-1773405766125.jpg",
-    "selected": false,
+    "selected": true,
     "wins": 0,
     "leadMs": 0
   },
@@ -28,14 +28,14 @@
     "name": "Taylor",
     "image": "assets/racers/taylor-1773405779457.jpg",
     "selected": true,
-    "wins": 0,
-    "leadMs": 4066
+    "wins": 1,
+    "leadMs": 28682
   },
   {
     "id": "ryan",
     "name": "Ryan",
     "image": "assets/racers/ryan-1773405794179.jpg",
-    "selected": false,
+    "selected": true,
     "wins": 0,
     "leadMs": 0
   },
@@ -45,13 +45,13 @@
     "image": "assets/racers/logan-1773405810064.jpg",
     "selected": true,
     "wins": 1,
-    "leadMs": 19550
+    "leadMs": 22783
   },
   {
     "id": "kellee",
     "name": "Kellee",
     "image": "assets/racers/kellee-1773405821215.jpg",
-    "selected": false,
+    "selected": true,
     "wins": 0,
     "leadMs": 0
   },
@@ -59,7 +59,7 @@
     "id": "tyler",
     "name": "Tyler",
     "image": "assets/racers/tyler-1773405829719.jpg",
-    "selected": false,
+    "selected": true,
     "wins": 0,
     "leadMs": 0
   },
@@ -67,7 +67,7 @@
     "id": "jason",
     "name": "Jason",
     "image": "assets/racers/jason-1773405852973.jpg",
-    "selected": false,
+    "selected": true,
     "wins": 0,
     "leadMs": 0
   },
@@ -75,7 +75,7 @@
     "id": "jared",
     "name": "Jared",
     "image": "assets/racers/jared-1773405863309.jpg",
-    "selected": false,
+    "selected": true,
     "wins": 0,
     "leadMs": 0
   }
